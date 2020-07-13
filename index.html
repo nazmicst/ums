@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Index Page</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="docs/assets/css/docs.min.css">
+    
+</head>
+<body>
+    <div id="wrapper">
+        <div class="topbar">
+            <div class="topbar-left">
+                <a href="#" class="logo">
+                    <span>
+                        <img src="img/logo.png" alt="Image Here" height="50">
+                    </span>
+                </a>
+            </div>
+            <div class="navbar navbar-default" role="navigation">
+                <div class="container">
+                    <ul class="nav navbar-nav navbar-right" >
+                        <li id="username"><h4>John Doe</h4></li>
+                        <li class="dropdown user-box">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <span class="fas fa-user-circle fa-2x pt-1"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="left side-menu">
+            <div id="sidebar-menu">
+                <ul class="list-unstyled side-menu-nav"> 
+                    <li><a href="#"><i class="fas fa-home"></i>Dashboard</a></li>
+                    <li class="active"><a href="#"><i class="fas fa-user"></i>User</a></li>
+                    <li><a href="#"><i class="fas fa-times"></i>Times</a></li>
+                    <li>
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="side-menu-collapse"><i class="fas fa-pager"></i>Pages</a>
+                        <ul class="collapse list-unstyled side-menu-nav" id="pageSubmenu">
+                            <li><a href="#">Page 1</a></li>
+                            <li><a href="#">Page 2</a></li>
+                            <li><a href="#">Page 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content-page">
+            <div class="content">
+                <div class="container">
+                    <div class="page-title-box mb-4">
+                        <h4 class="page-title">User</h4>
+                        <ol class="breadcrumb p-0 m-0">
+                            <li>
+                                <a href="#">User</a>
+                            </li>
+                            <li class="active">
+                                Listing
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="col mb-5 text-right">
+                        <a href="" class="btn btn-primary text-uppercase">
+                            <i class="fas fa-plus"> create</i>
+                        </a>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped">
+                                <thead>
+                                    <th>#</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Last Login</th>
+                                    <th>Action</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Syafiq Nazmi</td>
+                                        <td>syafiq.nazmi@coresystemtech.com</td>
+                                        <td>12 January 2020</td>
+                                        <td class="text-center">
+                                            <a href="#" class="btn btn-default btn-sm" data-toggle="tooltip" data-placement="top" title="View Details">
+                                                <i class="fas fa-search"></i>
+                                            </a>
+                                            <a href="#" class="btn btn-default btn-sm" data-toggle="tooltip" data-placement="top" title="Edit">
+                                                <i class="fas fa-edit"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Kyrielle</td>
+                                        <td>kyrielle@example.com</td>
+                                        <td>12 January 2020</td>
+                                        <td class="text-center">
+                                            <a href="#" class="btn btn-default btn-sm" data-toggle="tooltip" data-placement="top" title="View Details">
+                                                <i class="fas fa-search"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>    
+<script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
+<script src="docs/assets/js/docs.min.js"></script>
+<script>
+    $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script> 
+
+</body>
+</html>
